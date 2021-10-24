@@ -1,0 +1,10 @@
+@mixin mainFont($fontSize) {
+  font-size: $fontSize;
+  font-weight: 400;
+  color: #000;
+}
+
+// Then call in target style
+// .button {
+//   @include mainFont(20px);
+// }

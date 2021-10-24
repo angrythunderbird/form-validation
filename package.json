@@ -1,0 +1,25 @@
+{
+  "name": "form-validation-template",
+  "version": "1.0.0",
+  "description": "form validation template using js scss",
+  "main": "index.js",
+  "repository": "git@github.com:angrythunderbird/form-validation.git",
+  "author": "angrythunderbird <headcrab.albert@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node_modules/.bin/webpack --progress",
+    "start": "node_modules/.bin/webpack-dev-server"
+  },
+  "dependencies": {
+    "css-loader": "^6.4.0",
+    "html-loader": "^3.0.0",
+    "html-webpack-plugin": "^5.4.0",
+    "sass": "^1.43.3",
+    "sass-loader": "^12.2.0",
+    "sass-resources-loader": "^2.2.4",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  }
+}

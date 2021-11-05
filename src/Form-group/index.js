@@ -31,7 +31,8 @@ const inputPass = Input({
   elMessage: null
 });
 const submitBtn = Button({
-  onClick: () => console.log('Submit'),
+  // onClick: () => console.log('Submit'),
+  elType: 'submit',
   title: 'Submit',
   className: 'form__button'
 })

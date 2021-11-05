@@ -1,6 +1,5 @@
-const UI = {
-  inputEmail: document.getElementById('email'),
-  inputPassword: document.getElementById('password')
+export function inputsUI() {
+  const inputEmail = document.getElementById('email');
+  const inputPassword = document.getElementById('password');
+  return [inputEmail, inputPassword];
 }
-
-export default UI;

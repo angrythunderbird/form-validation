@@ -8,6 +8,8 @@ import './index.scss';
 
 const form = htmlToElement(Form);
 
+const formInner = form.querySelector('.form__inner');
+
 const inputEmail = Input({
   elType: 'email',
   elStyle: 'form__input',
@@ -28,8 +30,8 @@ const inputPass = Input({
   elName: "user-password",
   elMessage: null
 });
-form.insertAdjacentElement('beforeend', inputEmail);
-form.insertAdjacentElement('beforeend', inputPass);
+formInner.insertAdjacentElement('afterbegin', inputEmail);
+formInner.insertAdjacentElement('beforeend', inputPass);
 
 
 

@@ -1,6 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 *,
@@ -8,6 +9,7 @@ html {
 *::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+  overflow: hidden;
 }
 
 ul,
@@ -19,10 +21,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #root {
   width: 100vw;
   height: 100vh;
   background-color: $main-color;
+  box-sizing: border-box;
+  overflow: hidden;
 }

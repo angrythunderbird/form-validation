@@ -1,10 +1,10 @@
 import htmlToElement from '../utils/htmlToElement';
-import inputsAttrComplete from '../utils/inputsAttrComplete';
-
 import Form from './index.html';
 import Input from '../Input-base';
+import Button from '../Button-base';
 
 import './index.scss';
+
 
 const form = htmlToElement(Form);
 
@@ -30,8 +30,14 @@ const inputPass = Input({
   elName: "user-password",
   elMessage: null
 });
+const submitBtn = Button({
+  onClick: () => console.log('Submit'),
+  title: 'Submit',
+  className: 'form__button'
+})
 formInner.insertAdjacentElement('afterbegin', inputEmail);
 formInner.insertAdjacentElement('beforeend', inputPass);
+formInner.insertAdjacentElement('beforeend', submitBtn);
 
 
 

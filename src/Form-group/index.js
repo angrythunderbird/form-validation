@@ -9,6 +9,7 @@ import './index.scss';
 const form = htmlToElement(Form);
 
 const formInner = form.querySelector('.form__inner');
+const inputInnerArr = form.querySelectorAll('.form__input-inner');
 
 const inputEmail = Input({
   elType: 'email',
@@ -28,7 +29,6 @@ const inputPass = Input({
   elRequired: 'password',
   elTabindex: "2",
   elName: "user-password",
-  elMessage: null
 });
 const submitBtn = Button({
   // onClick: () => console.log('Submit'),
@@ -36,11 +36,10 @@ const submitBtn = Button({
   title: 'Submit',
   className: 'form__button'
 })
-formInner.insertAdjacentElement('afterbegin', inputEmail);
-formInner.insertAdjacentElement('beforeend', inputPass);
+inputInnerArr[0].insertAdjacentElement('afterbegin', inputEmail);
+inputInnerArr[1].insertAdjacentElement('beforeend', inputPass);
 formInner.insertAdjacentElement('beforeend', submitBtn);
 
-
-
-
-export default form;
+export {
+  form, inputEmail, inputPass
+}
